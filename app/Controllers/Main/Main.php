@@ -11,4 +11,14 @@ class Main extends BaseController
     {
         return view('main/home');
     }
+
+    public function sobre()
+    {
+        return view('main/sobre');
+    }
+
+    public function contato()
+    {
+        return view('main/contato');
+    }
 }
