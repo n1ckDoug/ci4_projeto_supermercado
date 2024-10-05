@@ -9,6 +9,6 @@ class Home extends BaseController
 {
     public function index()
     {
-        echo ('Página de gerenciador');
+        return view('gerenciador/index');
     }
 }

@@ -1,4 +1,4 @@
-<?= $this->extend('layout/layout_main'); ?>
+<?= $this->extend('layouts/layout_main'); ?>
 <?= $this->section('content'); ?>
 
 <style>
