@@ -2,16 +2,6 @@
 <?= $this->section('content'); ?>
 
 <style>
-    .card-form-contato {
-        padding: 20px;
-        width: 500px;
-        border: 1px solid rgb(77 175 72);
-        border-radius: 10px;
-        -webkit-box-shadow: 0px 9px 0px -1px rgb(77 175 72);
-        -moz-box-shadow: 0px 9px 0px -1px rgb(77 175 72);
-        box-shadow: 0px 9px 0px -1px rgb(77 175 72);
-    }
-
     .form-contato,
     .form-select-contato {
         display: block;
@@ -22,20 +12,21 @@
         line-height: 1.5;
         border-radius: .25rem;
         border: 1px solid #ced4da;
-        outline-color: rgb(77 175 72);;
+        outline-color: rgb(77 175 72);
+        ;
     }
 </style>
 
 <section class="mb-5">
     <div class="container d-flex align-items-center justify-content-center">
-        <div class="card-form-contato">
+        <div style="margin-top:115px;">
             <div class="row">
                 <h1 class="fw-bold text-uppercase text-center mb-4" style="color:rgb(77 175 72);">Entre em contato</h1>
             </div>
             <div class="row">
                 <form action="">
                     <div class="mb-3">
-                        <label for="nome" class="form-label">Nome completo: <span class="fw-bold" style="color:rgb(77 175 72);">*</span></label>
+                        <label for="nome" class="form-label">Nome: <span class="fw-bold" style="color:rgb(77 175 72);">*</span></label>
                         <input type="text" class="form-contato" id="some" placeholder="Digite seu nome completo">
                     </div>
                     <div class="mb-3">

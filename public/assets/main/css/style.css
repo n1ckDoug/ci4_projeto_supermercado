@@ -1,18 +1,33 @@
-#header {
-    background-color: white;
-}
-
-#header .nav li a {
-    color: #000;
+.navbar .offcanvas-body .navbar-nav .nav-item .nav-link {
+    font-weight: bold;
     transition: .5s ease;
 }
 
-#header .nav li a:hover {
+.navbar .offcanvas-body .navbar-nav .nav-item .nav-link:hover {
     color: rgb(77 175 72);
 }
 
-#header .nav li .active {
-    color: rgb(77 175 72);
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-navbar,
+.btn-contato {
+    background-color: rgb(77 175 72);
+    color: white;
+    font-weight: bold;
+    transition: background .5s ease;
+}
+
+.btn-navbar:hover,
+.btn-contato:hover{
+    background-color: rgb(54, 129, 50);
+    color: white;
 }
 
 #home .card {
@@ -119,4 +134,36 @@
     #comentarios #carouselExample2 {
         display: block;
     }
+}
+
+#produtos .card {
+    border: none;
+    background-color: hsl(0deg 0% 97.25%);
+}
+
+#produtos .card img {
+    height: 300px;
+}
+
+#produtos .card .produtoEstoque {
+    color: rgb(77 175 72);
+}
+
+#produtos .card input {
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    text-align: center;
+}
+
+#produtos .btn-decrementar {
+    background-color: hsl(46.23deg 100% 76.08%);
+}
+
+#produtos .btn-incrementar {
+    background-color: hsl(117.89deg 70.37% 84.12%);
+}
+
+footer .curved-top {
+    background-color: #fff;
 }

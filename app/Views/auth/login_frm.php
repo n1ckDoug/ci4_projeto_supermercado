@@ -3,7 +3,7 @@
 
 <div class="login-box">
     <div class="text-center mb-3">
-        <img src="<?= base_url('assets/auth/images/logo.png') ?>" alt="">
+        <h1 class="fw-bold text-uppercase">Login</h1>
     </div>
     <form action="" method="post">
         <div class="mb-3">

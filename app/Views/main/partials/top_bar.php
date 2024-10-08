@@ -1,57 +1,46 @@
-<div class="container">
-    <header id="header" class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
-        <div class="col-md-3 mb-2 mb-md-0">
-            <a href="<?= base_url('/') ?>" class="d-flex link-body-emphasis text-decoration-none fw-bold">
-                <i class="fs-1 text-success me-2 bi bi-cart4"></i>
-                <p class="fs-5 text-uppercase"><span class="text-success">Nome do</span> <br> Mercado</p>
-            </a>
-        </div>
-
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li>
-                <a class="nav-link px-2 fw-bold" href="<?= base_url('/') ?>">Home</a>
-            </li>
-            <li>
-                <a class="nav-link px-2 fw-bold" href="<?= base_url('/sobre') ?>">Sobre</a>
-            </li>
-            <li>
-                <a class="nav-link px-2 fw-bold" href="<?= base_url('/produtos') ?>">Produtos</a>
-            </li>
-            <li>
-                <a class="nav-link px-2 fw-bold" href="<?= base_url('/contato') ?>">Contato</a>
-            </li>
-        </ul>
-
-        <div class="col-md-3 text-end">
-            <ul style="list-style: none;" class="d-flex align-items-center">
-                <li>
-                    <a class="nav-link" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-search"></i></a></a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link ms-5 me-5">
-                        <i class="bi bi-cart4"></i>
+<nav class="navbar navbar-expand-lg bg-white fixed-top">
+    <div class="container">
+        <a href="<?= base_url('/') ?>" class="navbar-brand me-auto d-flex link-body-emphasis text-decoration-none fw-bold">
+            <i style="color: rgb(77 175 72);" class="fs-1 me-2 bi bi-cart4"></i>
+            <p class="fs-5 text-uppercase"><span style="color: rgb(77 175 72);">Nome do</span> <br> Mercado</p>
+        </a>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    <a href="<?= base_url('/') ?>" class="navbar-brand me-auto d-flex link-body-emphasis text-decoration-none fw-bold">
+                        <i style="color: rgb(77 175 72);" class="fs-1 me-2 bi bi-cart4"></i>
+                        <p class="fs-5 text-uppercase"><span style="color: rgb(77 175 72);">Nome do</span> <br> Mercado</p>
                     </a>
-                </li>
-                <li><a href="<?= base_url('/cadastro') ?>" class="btn btn-success">Cadastre-se</a></li>
-            </ul>
-        </div>
-    </header>
-
-    <div class="row">
-        <div class="col">
-            <div class="collapse multi-collapse" id="multiCollapseExample1">
-                <form action="">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
-                        <span class="input-group-text bg-success" id="basic-addon1">
-                            <button type="submit" class="btn btn-success">
-                                <i class="bi bi-search"></i>
-                            </button>
-                        </span>
-                    </div>
-                </form>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="<?= base_url('/') ?>">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="<?= base_url('/sobre') ?>">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="<?= base_url('/produtos') ?>">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="<?= base_url('/contato') ?>">Contato</a>
+                    </li>
+                </ul>
             </div>
         </div>
+
+        <a class="nav-link"><i class="bi bi-search"></i></a></a>
+        <a href="#" class="nav-link ms-3 me-3">
+            <i class="bi bi-cart4"></i>
+        </a>
+        <a href="<?= base_url('/cadastro') ?>" class="btn btn-navbar me-3">Cadastre-se</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
     </div>
-    
-</div>
+</nav>

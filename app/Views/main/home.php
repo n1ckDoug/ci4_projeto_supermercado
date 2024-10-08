@@ -1,7 +1,7 @@
 <?= $this->extend('layouts/layout_main'); ?>
 <?= $this->section('content'); ?>
 
-<section id="home" class="mt-5 mb-5 pt-5 pb-5">
+<section id="home"  class="mb-5 pt-5 pb-5" style="margin-top: 115px;">
     <div class="container">
         <div class="row">
             <div class="col-lg-7">

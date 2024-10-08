@@ -21,4 +21,9 @@ class Main extends BaseController
     {
         return view('main/contato');
     }
+
+    public function produtos()
+    {
+        return view('main/produtos');
+    }
 }

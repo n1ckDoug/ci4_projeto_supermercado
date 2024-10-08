@@ -1,10 +1,15 @@
-<footer class="pt-5 pb-5 bg-dark">
+<footer class="bg-dark">
+    <div class="curved-top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
+            <path fill="#212529" fill-opacity="1" d="M0,96L48,90.7C96,85,192,75,288,90.7C384,107,480,149,576,144C672,139,768,85,864,74.7C960,64,1056,96,1152,96C1248,96,1344,64,1392,48L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-lg-3 mb-3">
                 <a href="<?= base_url('/'); ?>" class="d-flex text-light text-decoration-none fw-bold">
-                    <i class="fs-1 text-success me-2 bi bi-cart4"></i>
-                    <p class="fs-5 text-uppercase text-light"><span class="text-success">Nome do</span> <br> Mercado
+                    <i style="color: rgb(77 175 72);" class="fs-1 me-2 bi bi-cart4"></i>
+                    <p class="fs-5 text-uppercase text-light"><span style="color: rgb(77 175 72);">Nome do</span> <br> Mercado
                     </p>
                 </a>
                 <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem adipisci

@@ -18,7 +18,7 @@
     }
 </style>
 
-<section class="mt-5 mb-5 pt-5 pb-5">
+<section class="mb-5 pt-5 pb-5" style="margin-top: 115px;">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 mb-3">
@@ -201,17 +201,17 @@
     </div>
 </section>
 
-<section style="background-color: rgb(77 175 72);" class="mt-5 pt-5 pb-5">
+<section class="mt-5 pt-5 pb-5">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 text-light">
+            <div class="col-lg-8">
                 <p class="fs-1 fw-bold">Tem alguma dúvida? Nossa equipe terá prazer em ajudá-lo.</p>
                 <div class="row">
                     <div class="col-lg-6">
-                        <a href="<?= base_url('/contato') ?>" class="btn btn-light p-3 mb-3 d-block text-center">Entre em contato <i class="bi bi-caret-right-fill"></i></a>
+                        <a href="<?= base_url('/contato') ?>" class="btn btn-contato p-3 mb-3 d-block text-center">Entre em contato <i class="bi bi-caret-right-fill"></i></a>
                     </div>
                     <div class="col-lg-6">
-                        <p class="fw-bold fs-3 mb-3 mt-2">Ou ligue: <span style="border-bottom:3px solid white"> (99) 99999-9999</span></p>
+                        <p class="fw-bold fs-3 mb-3 mt-2">Ou ligue: <span style="border-bottom:3px solid #000"> (99) 99999-9999</span></p>
                     </div>
                 </div>
             </div>
