@@ -1,9 +1,9 @@
 :root {
-    --top-bar-bg-color: #880000;
+    --top-bar-bg-color: rgb(77 175 72);
     --top-bar-fg-color: white;
 
-    --menu-bg-color: #330000;
-    --menu-fg-color: #fff;
+    --menu-bg-color: rgb(42, 100, 39);
+    --menu-fg-color: #000;
 
     --menu-group-fg-color: #ffae00;
 
@@ -19,36 +19,15 @@
     --shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.top-bar {
-    background-color: var(--top-bar-bg-color);
-    color: var(--top-bar-fg-color);
-    padding: 10px;
-}
-
-.top-bar a {
-    color: var(--menu-group-fg-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.top-bar a:hover {
-    color: var(--color-white);
-}
-
 /* menu button */
 .btn-main-menu {
+    z-index: 10;
     display: none;
-    color: var(--color-white);
-    background: var(--menu-bg-color);
+    color: var(--color-black);
     padding: 15px;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s ease;
-}
-
-.btn-main-menu:hover {
-    background: var(--color-white);
-    color: var(--color-black);
 }
 
 /* main menu */
@@ -61,15 +40,13 @@
     transition: transform 0.3s ease;
 }
 
-.menu-group {
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    padding: 0px 10px;
-    color: var(--menu-group-fg-color);
+.main-menu .active {
+    background-color: transparent !important;
+    color: var(--top-bar-bg-color) !important;
+    border: 1px solid var(--top-bar-bg-color) !important;
 }
 
-.main-menu a {
+.main-menu .nav-link {
     color: var(--menu-fg-color);
     text-decoration: none;
     display: block;
@@ -77,8 +54,18 @@
     transition: background 0.2s ease;
 }
 
-.main-menu a:hover {
+.main-menu .nav-link:hover {
     background-color: var(--top-bar-bg-color);
+    color: var(--color-white);
+}
+
+.main-menu .main-menu-logout {
+    transition: 0.2s ease;
+}
+
+.main-menu .main-menu-logout:hover {
+    background-color: transparent;
+    color: var(--top-bar-bg-color);
 }
 
 /* content */

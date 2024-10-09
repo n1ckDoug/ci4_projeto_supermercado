@@ -16,19 +16,26 @@
 
 <body>
 
-    <!-- top bar -->
-    <?= $this->include('gerenciador/partials/top_bar.php'); ?>
+    <!-- menu button responsive -->
+    <div class="container-fluid bg-light" style="position: sticky;top:0;left:0;z-index: 10;">
+        <div class="row">
+            <div class="btn-main-menu me-3">
+                <i class="fa-solid fa-bars fs-2"></i>
+            </div>
+        </div>
+    </div>
 
     <!-- gerenciador -->
     <section class="d-flex">
 
-        <nav class="main-menu p-2">
-            <!-- menu -->
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-light main-menu">
             <?= $this->include('gerenciador/partials/menu_gerenciador.php'); ?>
-        </nav>
+        </div>
 
         <!-- content -->
         <div class="content p-4">
+            <?= $this->include('gerenciador/partials/top_bar.php'); ?>
+
             <?= $this->renderSection('content') ?>
         </div>
     </section>
