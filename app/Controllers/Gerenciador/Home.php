@@ -9,6 +9,14 @@ class Home extends BaseController
 {
     public function index()
     {
-        return view('gerenciador/index');
+        // Verifica se está logado
+        $data['session'] = \Config\Services::session();
+
+        // Se não manda para página de login
+        if (!$data['session']->get('user')) {
+            return redirect()->to(base_url('gerenciador/login'));
+        }
+
+        return view('gerenciador/dashboard/home');
     }
 }

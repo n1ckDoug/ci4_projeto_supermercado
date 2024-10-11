@@ -19,9 +19,7 @@
     <!-- menu button responsive -->
     <div class="container-fluid bg-light" style="position: sticky;top:0;left:0;z-index: 10;">
         <div class="row">
-            <div class="btn-main-menu me-3">
-                <i class="fa-solid fa-bars fs-2"></i>
-            </div>
+            <i class="btn-main-menu fa-solid fa-bars fs-2" onclick="changeIcon(this)"></i>
         </div>
     </div>
 
@@ -33,7 +31,7 @@
         </div>
 
         <!-- content -->
-        <div class="content p-4">
+        <div class="content p-4 flex-fill">
             <?= $this->include('gerenciador/partials/top_bar.php'); ?>
 
             <?= $this->renderSection('content') ?>
