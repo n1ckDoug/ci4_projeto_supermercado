@@ -4,7 +4,7 @@
 </a>
 <ul class="nav nav-pills flex-column mb-auto mt-5">
     <li class="nav-item">
-        <a class="nav-link mb-2" href="#"><i class="fa-solid fa-burger me-3"></i>Produtos</a>
+        <a class="nav-link mb-2" href="<?= site_url('/gerenciador/produtos') ?>"><i class="fa-solid fa-burger me-3"></i>Produtos</a>
     </li>
     <li>
         <a class="nav-link mb-2" href="#"><i class="fa-solid fa-layer-group me-3"></i>Stock Disponível</a>

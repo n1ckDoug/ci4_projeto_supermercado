@@ -21,7 +21,8 @@ class ProductModel extends Model
         'promotion',
         'stock',
         'stock_min_limit',
-        'image'
+        'image',
+        'created_at'
     ];
 
     protected bool $allowEmptyInserts = false;

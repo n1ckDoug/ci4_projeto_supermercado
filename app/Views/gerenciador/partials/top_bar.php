@@ -1,15 +1,4 @@
-<header class="d-flex flex-wrap justify-content-between align-items-center mb-5">
-    <form action="">
-        <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">
-                <button class="btn" type="submit">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-            </span>
-            <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar" aria-describedby="basic-addon1">
-        </div>
-    </form>
-
+<header class="d-flex flex-wrap justify-content-end align-items-center mb-5">
     <div class="dropdown">
         <a href="#" class="d-flex align-items-center text-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
