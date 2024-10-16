@@ -3,6 +3,7 @@
 namespace App\Controllers\Main;
 
 use App\Controllers\BaseController;
+use App\Models\ProductModel;
 use CodeIgniter\HTTP\ResponseInterface;
 
 class Main extends BaseController
@@ -24,6 +25,15 @@ class Main extends BaseController
 
     public function produtos()
     {
-        return view('main/produtos');
+
+        // get products
+        $product_model = new ProductModel();
+        $products = $product_model->where('availability', true)->findAll();
+
+        $data = [
+            'products' => $products
+        ];
+
+        return view('main/produtos', $data);
     }
 }
