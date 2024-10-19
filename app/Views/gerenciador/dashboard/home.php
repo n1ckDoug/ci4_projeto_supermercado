@@ -8,6 +8,7 @@
                 <br>
                 <small class="text-secondary">Bem-vindo ao ambiente administrativo do site.</small>
             </h2>
+            <img style="max-width:400px;margin:20px auto;" class="d-block w-100" src="<?= base_url('assets/gerenciador/images/img-painel.gif') ?>" alt="">
         </div>
     </div>
 </div>

@@ -5,7 +5,7 @@
 <div class="content-box">
     <?= form_open_multipart('/gerenciador/produtos/edit_submit', ['novalidate' => true]) ?>
 
-    <input type="hidden" name="product_id" value="<?= $product->id ?>">
+    <input type="hidden" name="product_id" value="<?= Encrypt($product->id) ?>">
 
     <div class="row">
 

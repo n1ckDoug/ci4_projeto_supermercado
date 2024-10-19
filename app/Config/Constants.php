@@ -106,3 +106,6 @@ define('DB_HOST',              'localhost');
 define('DB_NAME',              'bd_supermercado');
 define('DB_USER',              'root');
 define('DB_PASS',              '');
+
+// encription key
+define('ENCRYPTION_KEY',            'Daan2jfVRbSK6H9h06bPKOQtvT4gXTeX');

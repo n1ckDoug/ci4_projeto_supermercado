@@ -65,9 +65,9 @@
                                 </div>
 
                                 <div class="text-end align-items-bottom">
-                                    <a href="<?= base_url('/gerenciador/produtos/editar_produto/' . $product->id) ?>" class="btn btn-sm btn-outline-secondary px-3 m-1"><i class="fa-regular fa-pen-to-square me-2"></i>Editar</a>
-                                    <a href="<?= base_url('/gerenciador/stocks/produto/' . $product->id) ?>" class="btn btn-sm btn-outline-secondary px-3 m-1"><i class="fa-solid fa-cubes-stacked me-2"></i>Stock</a>
-                                    <a href="<?= base_url('/gerenciador/produtos/delete/' . $product->id) ?>" class="btn btn-sm btn-outline-secondary px-3 m-1"><i class="fa-regular fa-trash-can me-2"></i>Eliminar</a>
+                                    <a href="<?= base_url('/gerenciador/produtos/editar_produto/' . Encrypt($product->id)) ?>" class="btn btn-sm btn-outline-secondary px-3 m-1"><i class="fa-regular fa-pen-to-square me-2"></i>Editar</a>
+                                    <a href="<?= base_url('/gerenciador/stocks/produto/' . Encrypt($product->id)) ?>" class="btn btn-sm btn-outline-secondary px-3 m-1"><i class="fa-solid fa-cubes-stacked me-2"></i>Stock</a>
+                                    <a href="<?= base_url('/gerenciador/produtos/delete/' . Encrypt($product->id)) ?>" class="btn btn-sm btn-outline-secondary px-3 m-1"><i class="fa-regular fa-trash-can me-2"></i>Eliminar</a>
                                 </div>
                             </div>
                         </div>

@@ -194,7 +194,7 @@ class Products extends BaseController
         return redirect()->to('gerenciador/produtos');
     }
 
-    public function edit_product($product_id)
+    public function edit_product($enc_id)
     {
 
         // Verifica se está logado
@@ -205,6 +205,7 @@ class Products extends BaseController
             return redirect()->to(base_url('gerenciador/login'));
         }
 
+        $product_id = Decrypt($enc_id);
         if (empty($product_id)) {
             return redirect()->to('gerenciador/produtos');
         }
@@ -303,7 +304,7 @@ class Products extends BaseController
         ]);
 
         // check if id is ok
-        $id = $this->request->getPost('product_id');
+        $id = Decrypt($this->request->getPost('product_id'));
         if (empty($id)) {
             return redirect()->to('gerenciador/produtos');
         }
@@ -354,7 +355,7 @@ class Products extends BaseController
         return redirect()->to('gerenciador/produtos');
     }
 
-    public function delete($product_id)
+    public function delete($enc_id)
     {
 
         // Verifica se está logado
@@ -365,6 +366,54 @@ class Products extends BaseController
             return redirect()->to(base_url('gerenciador/login'));
         }
 
-        echo 'Deletar o produto com id: ' . $product_id;
+        $product_id = Decrypt($enc_id);
+        if (empty($product_id)) {
+            return redirect()->to('gerenciador/produtos');
+        }
+
+        // verifica se o produto existe
+        $product_model = new ProductModel();
+        $product = $product_model->find($product_id);
+        if (!$product) {
+            return redirect()->to('gerenciador/produtos');
+        }
+
+        // show delete confirmation
+        $data = [
+            'title' => 'Produtos',
+            'page' => 'Deletar produto',
+            'product' => $product
+        ];
+
+        return view('gerenciador/dashboard/products/delete_product', $data);
+    }
+
+    public function delete_confirm($enc_id)
+    {
+        // Verifica se está logado
+        $data['session'] = \Config\Services::session();
+
+        // Se não manda para página de login
+        if (!$data['session']->get('user')) {
+            return redirect()->to(base_url('gerenciador/login'));
+        }
+
+        $product_id = Decrypt($enc_id);
+        if (empty($product_id)) {
+            return redirect()->to('gerenciador/produtos');
+        }
+
+        // verifica se o produto existe
+        $product_model = new ProductModel();
+        $product = $product_model->find($product_id);
+        if (!$product) {
+            return redirect()->to('gerenciador/produtos');
+        }
+
+        // delete product
+        $product_model->delete($product_id);
+
+        // redirect
+        return redirect()->to('gerenciador/produtos');
     }
 }
