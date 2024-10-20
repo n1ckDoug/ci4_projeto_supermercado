@@ -4,25 +4,21 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class ProductModel extends Model
+class StockModel extends Model
 {
-    protected $table            = 'products';
+    protected $table            = 'stocks';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';
     protected $useSoftDeletes   = true;
     protected $protectFields    = true;
     protected $allowedFields    = [
-        'name',
-        'description',
-        'category',
-        'price',
-        'availability',
-        'promotion',
-        'stock',
-        'stock_min_limit',
-        'image',
-        'created_at'
+        'id_product',
+        'stock_quantity',
+        'stock_supplier',
+        'reason',
+        'created_at',
+        'updated_at'
     ];
 
     protected bool $allowEmptyInserts = false;

@@ -5,7 +5,7 @@
 <div class="d-flex content-box">
 
     <div class="p-3">
-        <img src="<?= file_exists('assets/gerenciador/images/products/' . $product->image) ? base_url('assets/gerenciador/images/products/' . $product->image) : base_url('assets/gerenciador/images/products/no_image.png') ?>" class="img-fluid">
+        <img style="width: 200px;height: 200px;" src="<?= file_exists('assets/gerenciador/images/products/' . $product->image) ? base_url('assets/gerenciador/images/products/' . $product->image) : base_url('assets/gerenciador/images/products/no_image.png') ?>" class="img-fluid">
     </div>
 
     <div class="p-3">

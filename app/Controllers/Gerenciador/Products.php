@@ -187,6 +187,8 @@ class Products extends BaseController
             'image' => $novoNome,
         ];
 
+        date_default_timezone_set('America/Sao_Paulo');
+
         // insert data
         $product_model->insert($data);
 
@@ -348,6 +350,8 @@ class Products extends BaseController
             $data['image'] = $novoNome;
         }
 
+        date_default_timezone_set('America/Sao_Paulo');
+
         // update product
         $product_model->update($id, $data);
 
@@ -409,6 +413,8 @@ class Products extends BaseController
         if (!$product) {
             return redirect()->to('gerenciador/produtos');
         }
+
+        date_default_timezone_set('America/Sao_Paulo');
 
         // delete product
         $product_model->delete($product_id);

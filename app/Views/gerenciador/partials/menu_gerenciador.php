@@ -7,7 +7,7 @@
         <a class="nav-link mb-2" href="<?= site_url('/gerenciador/produtos') ?>"><i class="fa-solid fa-burger me-3"></i>Produtos</a>
     </li>
     <li>
-        <a class="nav-link mb-2" href="#"><i class="fa-solid fa-layer-group me-3"></i>Stock Disponível</a>
+        <a class="nav-link mb-2" href="<?= site_url('/gerenciador/stocks') ?>"><i class="fa-solid fa-layer-group me-3"></i>Stocks</a>
     </li>
     <li>
         <a class="nav-link mb-2" href="#"><i class="fa-solid fa-chart-column me-3"></i>Dados Estáticos</a>
