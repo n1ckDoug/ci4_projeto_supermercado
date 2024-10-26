@@ -23,11 +23,36 @@ class Stocks extends BaseController
          $products = $product_model->findAll();
 
          $data = [
-            'title' => 'Stocks',
-            'page' => 'Stocks',
+            'title' => 'Estoques',
+            'page' => 'Estoques',
             'products' => $products
          ];
 
          return view('gerenciador/dashboard/stocks/index', $data);
+    }
+
+    public function add($enc_id)
+    {
+        $id = Decrypt($enc_id);
+        if(empty($id)){
+            return redirect()->to('gerenciador/estoques');
+        }
+
+        // load product
+        $product_model = new ProductModel();
+        $product = $product_model->where('id', $id)->first();
+
+        $data = [
+            'title' => 'Estoque',
+            'page' => 'Adicionar estoque',
+            'product' => $product
+        ];
+
+        return view('gerenciador/dashboard/stocks/add_frn', $data);
+    }
+
+    public function add_submit()
+    {
+        echo 'add_submit';
     }
 }

@@ -23,6 +23,22 @@ body {
     background-color: var(--content-bg-color);
 }
 
+.responsive-product {
+    display: flex;
+}
+
+@media screen and (max-width:400px) {
+    .responsive-product {
+        display: block;
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+.btns-delete a:nth-child(2) {
+    margin-left: 16px;
+}
+
 /* menu button */
 .btn-main-menu {
     z-index: 10;
@@ -146,6 +162,24 @@ body {
     .main-menu.show {
         transform: translateX(0);
     }
+
+    .btns-delete a {
+        display: block;
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .btns-delete a:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .product-add-btns button,
+    .product-add-btns a {
+        display: block;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
 }
 
 .product-image {

@@ -51,8 +51,8 @@
                             </div>
 
                             <div class="col-12 text-end">
-                                <a href="#" class="btn btn-sm btn-outline-success px-3 m-1"><i class="fa-regular fa-square-plus me-2"></i>Adicionar Stock</a>
-                                <a href="#" class="btn btn-sm btn-outline-danger px-3 m-1"><i class="fa-regular fa-square-minus me-2"></i>Deletar Stock</a>
+                                <a href="<?= site_url('gerenciador/estoques/add/' . Encrypt($product->id)) ?>" class="btn btn-sm btn-outline-success px-3 m-1"><i class="fa-regular fa-square-plus me-2"></i>Adicionar Estoque</a>
+                                <a href="#" class="btn btn-sm btn-outline-danger px-3 m-1"><i class="fa-regular fa-square-minus me-2"></i>Deletar Estoque</a>
                                 <a href="#" class="btn btn-sm btn-outline-secondary px-3 m-1"><i class="fa fa-solid fa-right-left me-2"></i>Entradas e Saídas</a>
                             </div>
                         </div>

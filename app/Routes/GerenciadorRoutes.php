@@ -19,5 +19,7 @@ $routes->get('/gerenciador/produtos/delete/(:alphanum)', 'gerenciador\Products::
 $routes->get('/gerenciador/produtos/delete_confirm/(:alphanum)', 'gerenciador\Products::delete_confirm/$1');
 
 // Stock
-$routes->get('/gerenciador/stocks', 'gerenciador\Stocks::index');
-$routes->get('/gerenciador/stocks/produto/(:alphanum)', 'gerenciador\Stocks::stock/$1');
+$routes->get('/gerenciador/estoques', 'gerenciador\Stocks::index');
+$routes->get('/gerenciador/estoques/produto/(:alphanum)', 'gerenciador\Stocks::stock/$1');
+$routes->get('/gerenciador/estoques/add/(:alphanum)', 'gerenciador\Stocks::add/$1');
+$routes->post('/gerenciador/estoques/add_submit', 'gerenciador\Stocks::add_submit');

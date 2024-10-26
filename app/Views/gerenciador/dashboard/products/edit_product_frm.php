@@ -92,7 +92,7 @@
 
         <!-- submit -->
         <div class="row">
-            <div class="col px-5 pb-5">
+            <div class="col product-add-btns px-5 pb-5">
                 <a href="<?= site_url('gerenciador/produtos') ?>" class="btn btn-outline-secondary px-5"><i class="fas fa-ban me-2"></i>Cancelar</a>
                 <button type="submit" class="btn btn-outline-success px-5"><i class="fas fa-check me-2"></i>Editar produto</button>
             </div>

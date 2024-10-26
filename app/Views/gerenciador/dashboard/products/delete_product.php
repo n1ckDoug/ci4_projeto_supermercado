@@ -2,9 +2,9 @@
 <?= $this->section('content') ?>
 <?= $this->include('gerenciador/partials/page_title') ?>
 
-<div class="d-flex content-box">
+<div class="d-lg-flex content-box">
 
-    <div class="p-3">
+    <div class="p-3 text-center">
         <img style="width: 200px;height: 200px;" src="<?= file_exists('assets/gerenciador/images/products/' . $product->image) ? base_url('assets/gerenciador/images/products/' . $product->image) : base_url('assets/gerenciador/images/products/no_image.png') ?>" class="img-fluid">
     </div>
 
@@ -20,9 +20,9 @@
             </strong>
         </p>
         <p class="text-danger mb-3">Tem certeza que dejesa excluir esse produto? <br> É um processo irreversível.</p>
-        <div class="d-flex">
+        <div class="btns-delete">
             <a href="<?= site_url('gerenciador/produtos') ?>" class="btn btn-outline-secondary px-5"><i class="fas fa-ban me-2"></i>Cancelar</a>
-            <a href="<?= site_url('gerenciador/produtos/delete_confirm/' . Encrypt($product->id)) ?>" class="btn btn-danger px-5 ms-3"><i class="fas fa-trash me-2"></i>Deletar</a>
+            <a href="<?= site_url('gerenciador/produtos/delete_confirm/' . Encrypt($product->id)) ?>" class="btn btn-danger px-5"><i class="fas fa-trash me-2"></i>Deletar</a>
         </div>
     </div>
 

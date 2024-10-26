@@ -7,11 +7,10 @@
         <a class="nav-link mb-2" href="<?= site_url('/gerenciador/produtos') ?>"><i class="fa-solid fa-burger me-3"></i>Produtos</a>
     </li>
     <li>
-        <a class="nav-link mb-2" href="<?= site_url('/gerenciador/stocks') ?>"><i class="fa-solid fa-layer-group me-3"></i>Stocks</a>
+        <a class="nav-link mb-2" href="<?= site_url('/gerenciador/estoques') ?>"><i class="fa-solid fa-layer-group me-3"></i>Estoques</a>
     </li>
+    <hr>
     <li>
-        <a class="nav-link mb-2" href="#"><i class="fa-solid fa-chart-column me-3"></i>Dados Estáticos</a>
+        <a class="nav-link fw-bold text-uppercase mb-5 main-menu-logout" href="<?= base_url('/gerenciador/logout') ?>"> <i class="fa-solid fa-arrow-right-from-bracket me-3"></i> Sair</a>
     </li>
 </ul>
-
-<a class="nav-link fw-bold text-uppercase mb-5 main-menu-logout" href="<?= base_url('/gerenciador/logout') ?>"> <i class="fa-solid fa-arrow-right-from-bracket me-3"></i> Sair</a>
